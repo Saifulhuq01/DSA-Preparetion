@@ -2,10 +2,11 @@ package arrayWithSearchAlgo;
 
 public class subArray {
     public static void main(String[] args) {
-        int[] arr={1,-2,6,-1,3};
+        int[] arr={-2,1,-3,4,-1,2,1,-5,4};
         //subArr(arr);
         //maxSubArr(arr);
-        prefixSubArr(arr);
+        //prefixSubArr(arr);
+        System.out.println(kadane(arr));
 
     }
     static void subArr(int[] arr){
@@ -68,5 +69,22 @@ public class subArray {
             }
         }
         System.out.println("max subarr "+ max);
+    }
+    //kadane algo
+    static int kadane(int nums[]){
+        int ms=nums[0];
+        int cs=0;
+        
+        for (int i = 0; i < nums.length; i++) {
+            cs= cs+nums[i];
+
+            if (ms<cs) {
+                ms=cs;
+            }
+            if (cs<0) {
+                cs=0;
+            }
+        }
+        return ms;
     }
 }
