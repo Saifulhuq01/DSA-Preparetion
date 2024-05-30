@@ -8,16 +8,18 @@ public class reverseAnArr {
             System.out.print(arr[i]+" ");
         }
         System.out.println();
+
     }
     static void rev(int[] arr){
-        int start = 0, end= arr.length-1;
+        int start=0, end=arr.length-1;
         while (start<end) {
             int temp = arr[end];
             arr[end] = arr[start];
-            arr[start]=temp;
+            arr[start] = temp;
             
             start++;
             end--;
         }
     }
+    
 }
