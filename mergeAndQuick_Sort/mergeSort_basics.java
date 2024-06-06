@@ -1,4 +1,4 @@
-package merge_sort;
+package mergeAndQuick_Sort;
 
 public class mergeSort_basics {
     public static void main(String[] args) {

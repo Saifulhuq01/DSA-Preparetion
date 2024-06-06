@@ -1,7 +1,5 @@
 package twoD_array;
 
-import java.util.Scanner;
-
 public class twoD_basics {
     public static void main(String[] args) {
         //int matrix[][] = new int[3][3];
